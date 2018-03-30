@@ -1,3 +1,5 @@
 (sym_lib_table
-  (lib (name pwr_BeagleBone)(type Legacy)(uri ${KIPRJMOD}/pwr_BeagleBone.lib)(options "")(descr ""))
+  (lib (name BeagleBone-Black-Cape-rescue)(type Legacy)(uri ${KIPRJMOD}/BeagleBone-Black-Cape-rescue.lib)(options "")(descr ""))
+  (lib (name Levap_RF_Modules)(type Legacy)(uri /home/levap/KiCad/KiCadLibs/Levap_RF_Modules.lib)(options "")(descr ""))
+  (lib (name Levap_Sensors)(type Legacy)(uri /home/levap/KiCad/KiCadLibs/Levap_Sensors.lib)(options "")(descr ""))
 )

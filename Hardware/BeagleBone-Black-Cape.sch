@@ -1,179 +1,6 @@
-EESchema Schematic File Version 2
-LIBS:Levap_RF_Modules
-LIBS:Levap_Sensors
-LIBS:Analog
-LIBS:Device
-LIBS:Connector_Generic
-LIBS:4xxx
-LIBS:4xxx_IEEE
-LIBS:74xGxx
-LIBS:74xx
-LIBS:74xx_IEEE
-LIBS:Amplifier_Audio
-LIBS:Amplifier_Buffer
-LIBS:Amplifier_Current
-LIBS:Amplifier_Difference
-LIBS:Amplifier_Instrumentation
-LIBS:Amplifier_Operational
-LIBS:Amplifier_Video
-LIBS:Analog_ADC
-LIBS:Analog_DAC
-LIBS:Analog_Switch
-LIBS:Audio
-LIBS:Battery_Management
-LIBS:Comparator
-LIBS:Connector_Generic_MountingPin
-LIBS:Connector_Generic_Shielded
-LIBS:Connector_Specialized
-LIBS:Converter_ACDC
-LIBS:Converter_DCDC
-LIBS:CPLD_Altera
-LIBS:CPLD_Xilinx
-LIBS:CPU
-LIBS:CPU_NXP_6800
-LIBS:CPU_NXP_68000
-LIBS:CPU_PowerPC
-LIBS:Diode
-LIBS:Diode_Bridge
-LIBS:Diode_Laser
-LIBS:Display_Character
-LIBS:Display_Graphic
-LIBS:Driver_Display
-LIBS:Driver_FET
-LIBS:Driver_LED
-LIBS:Driver_Motor
-LIBS:Driver_Relay
-LIBS:DSP_Freescale
-LIBS:DSP_Microchip_DSPIC33
-LIBS:DSP_Motorola
-LIBS:DSP_Texas
-LIBS:Filter
-LIBS:FPGA_Actel
-LIBS:FPGA_Xilinx
-LIBS:FPGA_Xilinx_Artix7
-LIBS:FPGA_Xilinx_Kintex7
-LIBS:FPGA_Xilinx_Spartan6
-LIBS:FPGA_Xilinx_Virtex5
-LIBS:FPGA_Xilinx_Virtex6
-LIBS:FPGA_Xilinx_Virtex7
-LIBS:GPU
-LIBS:Graphic
-LIBS:Interface
-LIBS:Interface_CAN_LIN
-LIBS:Interface_CurrentLoop
-LIBS:Interface_Ethernet
-LIBS:Interface_Expansion
-LIBS:Interface_HID
-LIBS:Interface_LineDriver
-LIBS:Interface_Optical
-LIBS:Interface_Telecom
-LIBS:Interface_UART
-LIBS:Interface_USB
-LIBS:Isolator
-LIBS:Isolator_Analog
-LIBS:Jumper
-LIBS:LED
-LIBS:Logic_LevelTranslator
-LIBS:Logic_Programmable
-LIBS:MCU_AnalogDevices
-LIBS:MCU_Cypress
-LIBS:MCU_Espressif
-LIBS:MCU_Infineon
-LIBS:MCU_Intel
-LIBS:MCU_Microchip_8051
-LIBS:MCU_Microchip_ATmega
-LIBS:MCU_Microchip_ATtiny
-LIBS:MCU_Microchip_AVR
-LIBS:MCU_Microchip_PIC10
-LIBS:MCU_Microchip_PIC12
-LIBS:MCU_Microchip_PIC16
-LIBS:MCU_Microchip_PIC18
-LIBS:MCU_Microchip_PIC24
-LIBS:MCU_Microchip_PIC32
-LIBS:MCU_Microchip_SAME
-LIBS:MCU_Microchip_SAML
-LIBS:MCU_Module
-LIBS:MCU_Nordic
-LIBS:MCU_NXP_ColdFire
-LIBS:MCU_NXP_HC11
-LIBS:MCU_NXP_HC12
-LIBS:MCU_NXP_HCS12
-LIBS:MCU_NXP_Kinetis
-LIBS:MCU_NXP_LPC
-LIBS:MCU_NXP_MAC7100
-LIBS:MCU_NXP_MCore
-LIBS:MCU_NXP_S08
-LIBS:MCU_Parallax
-LIBS:MCU_SiFive
-LIBS:MCU_SiliconLabs
-LIBS:MCU_ST_STM8
-LIBS:MCU_ST_STM32
-LIBS:MCU_Texas
-LIBS:MCU_Texas_MSP430
-LIBS:Mechanical
-LIBS:Memory_Controller
-LIBS:Memory_EEPROM
-LIBS:Memory_EPROM
-LIBS:Memory_Flash
-LIBS:Memory_NVRAM
-LIBS:Memory_RAM
-LIBS:Memory_ROM
-LIBS:Memory_UniqueID
-LIBS:Motor
-LIBS:Oscillator
-LIBS:Potentiometer_Digital
-LIBS:power
-LIBS:Power_Management
-LIBS:Power_Protection
-LIBS:Power_Supervisor
-LIBS:pspice
-LIBS:Reference_Current
-LIBS:Reference_Voltage
-LIBS:Regulator_Controller
-LIBS:Regulator_Current
-LIBS:Regulator_Linear
-LIBS:Regulator_SwitchedCapacitor
-LIBS:Regulator_Switching
-LIBS:Relay
-LIBS:Relay_SolidState
-LIBS:RF
-LIBS:RF_AM_FM
-LIBS:RF_Amplifier
-LIBS:RF_Bluetooth
-LIBS:RF_GPS
-LIBS:RF_Mixer
-LIBS:RF_Module
-LIBS:RF_RFID
-LIBS:RF_Switch
-LIBS:RF_WiFi
-LIBS:RF_ZigBee
-LIBS:Sensor
-LIBS:Sensor_Audio
-LIBS:Sensor_Current
-LIBS:Sensor_Gas
-LIBS:Sensor_Humidity
-LIBS:Sensor_Magnetic
-LIBS:Sensor_Motion
-LIBS:Sensor_Optical
-LIBS:Sensor_Pressure
-LIBS:Sensor_Proximity
-LIBS:Sensor_Temperature
-LIBS:Sensor_Touch
-LIBS:Sensor_Voltage
-LIBS:Switch
-LIBS:Timer
-LIBS:Timer_PLL
-LIBS:Timer_RTC
-LIBS:Transformer
-LIBS:Transistor_Array
-LIBS:Transistor_BJT
-LIBS:Transistor_FET
-LIBS:Transistor_IGBT
-LIBS:Triac_Thyristor
-LIBS:Valve
-LIBS:Video
+EESchema Schematic File Version 4
 LIBS:BeagleBone-Black-Cape-cache
-EELAYER 25 0
+EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -188,7 +15,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L power:GNDD #PWR01
+L BeagleBone-Black-Cape-rescue:power_GNDD-RESCUE-BeagleBone-Black-Cape #PWR01
 U 1 1 5589785A
 P 2450 3650
 F 0 "#PWR01" H 2450 3400 50  0001 C CNN
@@ -199,7 +26,7 @@ F 3 "" H 2450 3650 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GNDD #PWR02
+L BeagleBone-Black-Cape-rescue:power_GNDD-RESCUE-BeagleBone-Black-Cape #PWR02
 U 1 1 558978D3
 P 3500 1150
 F 0 "#PWR02" H 3500 900 50  0001 C CNN
@@ -210,7 +37,7 @@ F 3 "" H 3500 1150 60  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L power:GNDD #PWR03
+L BeagleBone-Black-Cape-rescue:power_GNDD-RESCUE-BeagleBone-Black-Cape #PWR03
 U 1 1 5589790A
 P 1400 1150
 F 0 "#PWR03" H 1400 900 50  0001 C CNN
@@ -221,7 +48,7 @@ F 3 "" H 1400 1150 60  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L power:GNDD #PWR04
+L BeagleBone-Black-Cape-rescue:power_GNDD-RESCUE-BeagleBone-Black-Cape #PWR04
 U 1 1 558979C1
 P 4650 1150
 F 0 "#PWR04" H 4650 900 50  0001 C CNN
@@ -232,7 +59,7 @@ F 3 "" H 4650 1150 60  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L power:GNDD #PWR05
+L BeagleBone-Black-Cape-rescue:power_GNDD-RESCUE-BeagleBone-Black-Cape #PWR05
 U 1 1 558979E8
 P 5650 1150
 F 0 "#PWR05" H 5650 900 50  0001 C CNN
@@ -243,7 +70,7 @@ F 3 "" H 5650 1150 60  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L power:+3.3V #PWR06
+L BeagleBone-Black-Cape-rescue:power_+3.3V-RESCUE-BeagleBone-Black-Cape #PWR06
 U 1 1 55897A67
 P 2850 950
 F 0 "#PWR06" H 2850 800 50  0001 C CNN
@@ -254,7 +81,7 @@ F 3 "" H 2850 950 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+5V #PWR07
+L BeagleBone-Black-Cape-rescue:power_+5V-RESCUE-BeagleBone-Black-Cape #PWR07
 U 1 1 55897A7F
 P 3050 950
 F 0 "#PWR07" H 3050 800 50  0001 C CNN
@@ -265,7 +92,7 @@ F 3 "" H 3050 950 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+3.3V #PWR08
+L BeagleBone-Black-Cape-rescue:power_+3.3V-RESCUE-BeagleBone-Black-Cape #PWR08
 U 1 1 55897EE7
 P 2050 950
 F 0 "#PWR08" H 2050 800 50  0001 C CNN
@@ -276,7 +103,7 @@ F 3 "" H 2050 950 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+5V #PWR09
+L BeagleBone-Black-Cape-rescue:power_+5V-RESCUE-BeagleBone-Black-Cape #PWR09
 U 1 1 55897EF8
 P 1850 950
 F 0 "#PWR09" H 1850 800 50  0001 C CNN
@@ -287,7 +114,7 @@ F 3 "" H 1850 950 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L pwr_BeagleBone:SYS_5V #PWR010
+L BeagleBone-Black-Cape-rescue:pwr_BeagleBone_SYS_5V-RESCUE-BeagleBone-Black-Cape #PWR010
 U 1 1 55898497
 P 3300 950
 F 0 "#PWR010" H 3300 800 50  0001 C CNN
@@ -298,7 +125,7 @@ F 3 "" H 3300 950 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L pwr_BeagleBone:SYS_5V #PWR011
+L BeagleBone-Black-Cape-rescue:pwr_BeagleBone_SYS_5V-RESCUE-BeagleBone-Black-Cape #PWR011
 U 1 1 558984AF
 P 1600 950
 F 0 "#PWR011" H 1600 800 50  0001 C CNN
@@ -309,7 +136,7 @@ F 3 "" H 1600 950 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L pwr_BeagleBone:VDD_ADC #PWR012
+L BeagleBone-Black-Cape-rescue:pwr_BeagleBone_VDD_ADC-RESCUE-BeagleBone-Black-Cape #PWR012
 U 1 1 558985D8
 P 3050 2550
 F 0 "#PWR012" H 3050 2400 50  0001 C CNN
@@ -320,7 +147,7 @@ F 3 "" H 3050 2550 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L pwr_BeagleBone:GNDA_ADC #PWR013
+L BeagleBone-Black-Cape-rescue:pwr_BeagleBone_GNDA_ADC-RESCUE-BeagleBone-Black-Cape #PWR013
 U 1 1 5589865D
 P 3050 2750
 F 0 "#PWR013" H 3050 2500 50  0001 C CNN
@@ -335,7 +162,7 @@ SYS_RESETN
 Text GLabel 2100 1550 0    50   Input ~ 0
 PWR_BUT
 $Comp
-L Connector_Generic:Conn_02x23_Odd_Even P9
+L BeagleBone-Black-Cape-rescue:Connector_Generic_Conn_02x23_Odd_Even-RESCUE-BeagleBone-Black-Cape P9
 U 1 1 55DF7DBA
 P 2400 2250
 F 0 "P9" H 2400 3450 50  0000 C CNN
@@ -346,7 +173,7 @@ F 3 "" H 2400 1400 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_02x23_Odd_Even P8
+L BeagleBone-Black-Cape-rescue:Connector_Generic_Conn_02x23_Odd_Even-RESCUE-BeagleBone-Black-Cape P8
 U 1 1 55DF7DE1
 P 5100 2250
 F 0 "P8" H 5100 3450 50  0000 C CNN
@@ -357,7 +184,7 @@ F 3 "" H 5100 1400 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L CC2538MODULE M2
+L Levap_RF_Modules:CC2538MODULE M2
 U 1 1 5AB855D4
 P 7650 2050
 F 0 "M2" H 7650 3000 45  0000 C CNN
@@ -368,7 +195,7 @@ F 3 "" H 7650 3000 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L MR1132 M1
+L Levap_RF_Modules:MR1132 M1
 U 1 1 5AB8582D
 P 2500 6600
 F 0 "M1" H 2500 6850 60  0000 C CNN
@@ -379,7 +206,7 @@ F 3 "" H 2400 6500 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C1
+L BeagleBone-Black-Cape-rescue:C-Device1 C1
 U 1 1 5AB85961
 P 3100 6600
 F 0 "C1" H 3125 6700 50  0000 L CNN
@@ -390,7 +217,7 @@ F 3 "" H 3100 6600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L pwr_BeagleBone:SYS_5V #PWR014
+L BeagleBone-Black-Cape-rescue:pwr_BeagleBone_SYS_5V-RESCUE-BeagleBone-Black-Cape #PWR014
 U 1 1 5AB85AA7
 P 3100 6400
 F 0 "#PWR014" H 3100 6250 50  0001 C CNN
@@ -401,7 +228,7 @@ F 3 "" H 3100 6400 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GNDD #PWR015
+L BeagleBone-Black-Cape-rescue:power_GNDD-RESCUE-BeagleBone-Black-Cape #PWR015
 U 1 1 5AB85B25
 P 3100 6800
 F 0 "#PWR015" H 3100 6550 50  0001 C CNN
@@ -412,7 +239,7 @@ F 3 "" H 3100 6800 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GNDD #PWR016
+L BeagleBone-Black-Cape-rescue:power_GNDD-RESCUE-BeagleBone-Black-Cape #PWR016
 U 1 1 5AB85BD6
 P 7250 2850
 F 0 "#PWR016" H 7250 2600 50  0001 C CNN
@@ -423,7 +250,7 @@ F 3 "" H 7250 2850 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GNDD #PWR017
+L BeagleBone-Black-Cape-rescue:power_GNDD-RESCUE-BeagleBone-Black-Cape #PWR017
 U 1 1 5AB85BF0
 P 6350 1350
 F 0 "#PWR017" H 6350 1100 50  0001 C CNN
@@ -434,7 +261,7 @@ F 3 "" H 6350 1350 60  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L power:+3.3V #PWR018
+L BeagleBone-Black-Cape-rescue:power_+3.3V-RESCUE-BeagleBone-Black-Cape #PWR018
 U 1 1 5AB85CF5
 P 6550 1150
 F 0 "#PWR018" H 6550 1000 50  0001 C CNN
@@ -445,7 +272,7 @@ F 3 "" H 6550 1150 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Conn_01x02 J3
+L BeagleBone-Black-Cape-rescue:Conn_01x02-Connector_Generic1 J3
 U 1 1 5AB85F99
 P 10500 1150
 F 0 "J3" H 10500 1250 50  0000 C CNN
@@ -456,7 +283,7 @@ F 3 "" H 10500 1150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GNDD #PWR019
+L BeagleBone-Black-Cape-rescue:power_GNDD-RESCUE-BeagleBone-Black-Cape #PWR019
 U 1 1 5AB861C4
 P 10300 1150
 F 0 "#PWR019" H 10300 900 50  0001 C CNN
@@ -467,7 +294,7 @@ F 3 "" H 10300 1150 60  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Conn_01x04 J4
+L BeagleBone-Black-Cape-rescue:Conn_01x04-Connector_Generic1 J4
 U 1 1 5AB86213
 P 10500 2150
 F 0 "J4" H 10500 2350 50  0000 C CNN
@@ -478,7 +305,7 @@ F 3 "" H 10500 2150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+3.3V #PWR020
+L BeagleBone-Black-Cape-rescue:power_+3.3V-RESCUE-BeagleBone-Black-Cape #PWR020
 U 1 1 5AB86359
 P 10250 2000
 F 0 "#PWR020" H 10250 1850 50  0001 C CNN
@@ -489,7 +316,7 @@ F 3 "" H 10250 2000 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GNDD #PWR021
+L BeagleBone-Black-Cape-rescue:power_GNDD-RESCUE-BeagleBone-Black-Cape #PWR021
 U 1 1 5AB86395
 P 10300 2150
 F 0 "#PWR021" H 10300 1900 50  0001 C CNN
@@ -506,7 +333,7 @@ UART0_BOOT_RX
 Text Label 10000 1250 2    60   ~ 0
 BOOT
 $Comp
-L power:GNDD #PWR022
+L BeagleBone-Black-Cape-rescue:power_GNDD-RESCUE-BeagleBone-Black-Cape #PWR022
 U 1 1 5AB86607
 P 9050 1250
 F 0 "#PWR022" H 9050 1000 50  0001 C CNN
@@ -517,7 +344,7 @@ F 3 "" H 9050 1250 60  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L power:GNDD #PWR023
+L BeagleBone-Black-Cape-rescue:power_GNDD-RESCUE-BeagleBone-Black-Cape #PWR023
 U 1 1 5AB86676
 P 8850 2450
 F 0 "#PWR023" H 8850 2200 50  0001 C CNN
@@ -530,11 +357,11 @@ $EndComp
 Wire Wire Line
 	2700 3250 2850 3250
 Wire Wire Line
-	2850 3250 2850 3550
+	2850 3250 2850 3350
 Wire Wire Line
-	2850 3550 2050 3550
+	2850 3550 2450 3550
 Wire Wire Line
-	2050 3550 2050 3250
+	2050 3550 2050 3350
 Wire Wire Line
 	2050 3250 2200 3250
 Wire Wire Line
@@ -643,7 +470,7 @@ PD3
 Text Label 8750 1350 0    60   ~ 0
 PD4
 $Comp
-L Conn_02x07_Odd_Even J1
+L BeagleBone-Black-Cape-rescue:Conn_02x07_Odd_Even-Connector_Generic1 J1
 U 1 1 5AB86C87
 P 9850 3650
 F 0 "J1" H 9900 4050 50  0000 C CNN
@@ -664,7 +491,7 @@ TDI
 Text Label 9650 3750 2    60   ~ 0
 RESET
 $Comp
-L power:+3.3V #PWR024
+L BeagleBone-Black-Cape-rescue:power_+3.3V-RESCUE-BeagleBone-Black-Cape #PWR024
 U 1 1 5AB86EBE
 P 9150 3850
 F 0 "#PWR024" H 9150 3700 50  0001 C CNN
@@ -675,7 +502,7 @@ F 3 "" H 9150 3850 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GNDD #PWR025
+L BeagleBone-Black-Cape-rescue:power_GNDD-RESCUE-BeagleBone-Black-Cape #PWR025
 U 1 1 5AB86EE1
 P 9600 3950
 F 0 "#PWR025" H 9600 3700 50  0001 C CNN
@@ -686,7 +513,7 @@ F 3 "" H 9600 3950 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GNDD #PWR026
+L BeagleBone-Black-Cape-rescue:power_GNDD-RESCUE-BeagleBone-Black-Cape #PWR026
 U 1 1 5AB86F04
 P 10200 3950
 F 0 "#PWR026" H 10200 3700 50  0001 C CNN
@@ -697,7 +524,7 @@ F 3 "" H 10200 3950 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L pwr_BeagleBone:SYS_5V #PWR027
+L BeagleBone-Black-Cape-rescue:pwr_BeagleBone_SYS_5V-RESCUE-BeagleBone-Black-Cape #PWR027
 U 1 1 5AB86F27
 P 10650 3850
 F 0 "#PWR027" H 10650 3700 50  0001 C CNN
@@ -754,7 +581,7 @@ NoConn ~ 8750 1750
 NoConn ~ 2050 6550
 NoConn ~ 2050 6650
 $Comp
-L 2N7002 Q1
+L BeagleBone-Black-Cape-rescue:2N7002-Transistor_FET1 Q1
 U 1 1 5AB878F5
 P 2500 4800
 F 0 "Q1" V 2750 4750 50  0000 L CNN
@@ -765,7 +592,7 @@ F 3 "" H 2500 4800 50  0001 L CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L R R1
+L BeagleBone-Black-Cape-rescue:R-Device1 R1
 U 1 1 5AB87BEF
 P 2200 4650
 F 0 "R1" V 2280 4650 50  0000 C CNN
@@ -776,7 +603,7 @@ F 3 "" H 2200 4650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R4
+L BeagleBone-Black-Cape-rescue:R-Device1 R4
 U 1 1 5AB87CF4
 P 2800 4650
 F 0 "R4" V 2880 4650 50  0000 C CNN
@@ -787,7 +614,7 @@ F 3 "" H 2800 4650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+3.3V #PWR028
+L BeagleBone-Black-Cape-rescue:power_+3.3V-RESCUE-BeagleBone-Black-Cape #PWR028
 U 1 1 5AB87D71
 P 2200 4400
 F 0 "#PWR028" H 2200 4250 50  0001 C CNN
@@ -804,16 +631,16 @@ Wire Wire Line
 Wire Wire Line
 	2200 4500 2200 4400
 Wire Wire Line
-	2050 4900 2300 4900
+	2050 4900 2200 4900
 Wire Wire Line
 	2200 4900 2200 4800
 Wire Wire Line
-	2700 4900 2950 4900
+	2700 4900 2800 4900
 Wire Wire Line
 	2800 4900 2800 4800
 Connection ~ 2200 4500
 $Comp
-L pwr_BeagleBone:SYS_5V #PWR029
+L BeagleBone-Black-Cape-rescue:pwr_BeagleBone_SYS_5V-RESCUE-BeagleBone-Black-Cape #PWR029
 U 1 1 5AB87EB1
 P 2800 4400
 F 0 "#PWR029" H 2800 4250 50  0001 C CNN
@@ -828,7 +655,7 @@ Wire Wire Line
 Connection ~ 2200 4900
 Connection ~ 2800 4900
 $Comp
-L R R3
+L BeagleBone-Black-Cape-rescue:R-Device1 R3
 U 1 1 5AB881F8
 P 2650 5300
 F 0 "R3" V 2730 5300 50  0000 C CNN
@@ -839,7 +666,7 @@ F 3 "" H 2650 5300 50  0001 C CNN
 	0    -1   1    0   
 $EndComp
 $Comp
-L R R2
+L BeagleBone-Black-Cape-rescue:R-Device1 R2
 U 1 1 5AB8832C
 P 2400 5550
 F 0 "R2" V 2480 5550 50  0000 C CNN
@@ -852,12 +679,12 @@ $EndComp
 Wire Wire Line
 	2800 5300 2950 5300
 Wire Wire Line
-	2050 5300 2500 5300
+	2050 5300 2400 5300
 Wire Wire Line
 	2400 5300 2400 5400
 Connection ~ 2400 5300
 $Comp
-L power:GNDD #PWR030
+L BeagleBone-Black-Cape-rescue:power_GNDD-RESCUE-BeagleBone-Black-Cape #PWR030
 U 1 1 5AB884E1
 P 2400 5700
 F 0 "#PWR030" H 2400 5450 50  0001 C CNN
@@ -884,7 +711,7 @@ UART1_TX
 Text Label 2200 2150 2    60   ~ 0
 UART1_RX
 $Comp
-L MAX3072E U1
+L BeagleBone-Black-Cape-rescue:MAX3072E-Interface_UART1 U1
 U 1 1 5AB8947A
 P 6450 4800
 F 0 "U1" H 6150 5150 50  0000 L CNN
@@ -895,7 +722,7 @@ F 3 "" H 6450 4800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C2
+L BeagleBone-Black-Cape-rescue:C-Device1 C2
 U 1 1 5AB8954B
 P 4950 4800
 F 0 "C2" H 4975 4900 50  0000 L CNN
@@ -906,7 +733,7 @@ F 3 "" H 4950 4800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+3.3V #PWR031
+L BeagleBone-Black-Cape-rescue:power_+3.3V-RESCUE-BeagleBone-Black-Cape #PWR031
 U 1 1 5AB89610
 P 6450 4400
 F 0 "#PWR031" H 6450 4250 50  0001 C CNN
@@ -917,7 +744,7 @@ F 3 "" H 6450 4400 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+3.3V #PWR032
+L BeagleBone-Black-Cape-rescue:power_+3.3V-RESCUE-BeagleBone-Black-Cape #PWR032
 U 1 1 5AB896A2
 P 4950 4650
 F 0 "#PWR032" H 4950 4500 50  0001 C CNN
@@ -928,7 +755,7 @@ F 3 "" H 4950 4650 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GNDD #PWR033
+L BeagleBone-Black-Cape-rescue:power_GNDD-RESCUE-BeagleBone-Black-Cape #PWR033
 U 1 1 5AB896F8
 P 6450 5200
 F 0 "#PWR033" H 6450 4950 50  0001 C CNN
@@ -939,7 +766,7 @@ F 3 "" H 6450 5200 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GNDD #PWR034
+L BeagleBone-Black-Cape-rescue:power_GNDD-RESCUE-BeagleBone-Black-Cape #PWR034
 U 1 1 5AB89730
 P 4950 4950
 F 0 "#PWR034" H 4950 4700 50  0001 C CNN
@@ -950,7 +777,7 @@ F 3 "" H 4950 4950 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6050 4700 5900 4700
+	6050 4700 6000 4700
 Wire Wire Line
 	6050 4900 6000 4900
 Wire Wire Line
@@ -963,7 +790,7 @@ UART2_RX
 Text Label 5900 4700 2    60   ~ 0
 UART2_RE_DE
 $Comp
-L R R5
+L BeagleBone-Black-Cape-rescue:R-Device1 R5
 U 1 1 5AB89BE3
 P 7150 4800
 F 0 "R5" V 7230 4800 50  0000 C CNN
@@ -978,14 +805,14 @@ Wire Wire Line
 Wire Wire Line
 	6900 4700 6900 4650
 Wire Wire Line
-	6900 4650 7350 4650
+	6900 4650 7150 4650
 Connection ~ 7150 4650
 Wire Wire Line
 	6850 4900 6900 4900
 Wire Wire Line
 	6900 4900 6900 4950
 Wire Wire Line
-	6900 4950 7350 4950
+	6900 4950 7150 4950
 Connection ~ 7150 4950
 Text Label 7350 4650 0    60   ~ 0
 RS485_A
@@ -1002,7 +829,7 @@ Wire Wire Line
 Text Label 2200 2350 2    60   ~ 0
 UART2_RE_DE
 $Comp
-L Conn_01x04 J2
+L BeagleBone-Black-Cape-rescue:Conn_01x04-Connector_Generic1 J2
 U 1 1 5AB8A905
 P 10150 4700
 F 0 "J2" H 10150 4900 50  0000 C CNN
@@ -1017,7 +844,7 @@ RS485_A
 Text Label 9950 4900 2    60   ~ 0
 RS485_B
 $Comp
-L power:GNDD #PWR035
+L BeagleBone-Black-Cape-rescue:power_GNDD-RESCUE-BeagleBone-Black-Cape #PWR035
 U 1 1 5AB8ABD4
 P 9500 4700
 F 0 "#PWR035" H 9500 4450 50  0001 C CNN
@@ -1028,7 +855,7 @@ F 3 "" H 9500 4700 60  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L power:+5V #PWR036
+L BeagleBone-Black-Cape-rescue:power_+5V-RESCUE-BeagleBone-Black-Cape #PWR036
 U 1 1 5AB8ACAB
 P 9900 4550
 F 0 "#PWR036" H 9900 4400 50  0001 C CNN
@@ -1111,4 +938,22 @@ NoConn ~ 5400 3050
 NoConn ~ 5400 3150
 NoConn ~ 5400 3250
 NoConn ~ 5400 3350
+Wire Wire Line
+	2050 3350 2050 3250
+Wire Wire Line
+	2850 3350 2850 3550
+Wire Wire Line
+	2450 3550 2050 3550
+Wire Wire Line
+	2200 4900 2300 4900
+Wire Wire Line
+	2800 4900 2950 4900
+Wire Wire Line
+	2400 5300 2500 5300
+Wire Wire Line
+	6000 4700 5900 4700
+Wire Wire Line
+	7150 4650 7350 4650
+Wire Wire Line
+	7150 4950 7350 4950
 $EndSCHEMATC
